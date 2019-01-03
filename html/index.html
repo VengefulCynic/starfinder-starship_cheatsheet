@@ -11,9 +11,7 @@
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-2 border border-dark bg-dark rounded text-white">
+                <div class="col-2 border border-dark bg-dark rounded text-white offset-1" style="min-width: 275px">
                     <div><b>Ship Tier: </b>
                         <div id="ship_tier"></div>
                     </div>
@@ -46,7 +44,7 @@
               <div id="engineering" class="tab-pane fade in active show">
                 <h3>Engineering</h3>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm offset-sm-1">
                         <h4>Engineer Actions</h4>
                     </div>
                     <div class="col-sm">
@@ -54,38 +52,76 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
-                       <div class="col-2 border border-primary bg-dark rounded text-white">
-                          <div class="display-4 text-center" id="engineer_Divert"></div>
-                          <pre class="text-white text-center"><small>Divert</small></pre>
+                    <div class="col-sm offset-sm-1">
+                       <div class="row"> 
+                           <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_Divert"></div>
+                              <pre class="text-white text-center"><small>Divert</small></pre>
+                           </div>
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_HoldItTogether"></div>
+                              <pre class="text-white text-center"><small>Hold It<br />Together</small></pre>
+                           </div>
                        </div>
-                       <div class="col-2 border border-success bg-dark rounded text-white">
-                          <div class="display-4 text-center" id="engineer_HoldItTogether"></div>
-                          <pre class="text-white text-center"><small>Hold It<br />Together</small></pre>
+                       <div class="row">    
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_PatchGlitch"></div>
+                              <pre class="text-white text-center"><small>Patch<br />Glitch</small></pre>
+                           </div>
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_PatchMalfunction"></div>
+                              <pre class="text-white text-center"><small>Patch<br />Malfunction</small></pre>
+                           </div>
                        </div>
-                       <div class="col-2 border border-success bg-dark rounded text-white">
-                          <div class="display-4 text-center" id="engineer_PatchGlitch"></div>
-                          <pre class="text-white text-center"><small>Patch<br />Glitch</small></pre>
+                       <div class="row">
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_PatchWrecked"></div>
+                              <pre class="text-white text-center"><small>Patch<br />Wrecked</small></pre>
+                           </div>
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="engineer_Overpower"></div>
+                              <pre class="text-white text-center"><small>Overpower</small></pre>
+                           </div>
                        </div>
-                       <div>Patch Malfunction: <div id="engineer_PatchMalfunction"></div></div><br />
-                       <div>Patch Wrecked: <div id="engineer_PatchWrecked"></div></div><br />
-                       <div>Overpower: <div id="engineer_Overpower"></div></div><br />
-                       <div>QuickFix: <div id="engineer_QuickFix"></div></div><br />
+                       <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                           <div class="display-4 text-center" id="engineer_QuickFix"></div>
+                           <pre class="text-white text-center"><small>Quick Fix</small></pre>
+                        </div>
                     </div>
                     <div class="col-sm">
-                       <b>Captain</b><br />
-                       <div>Demand: <div id="captain_Demand"></div></div><br />
-                       <div>Encourage: <div id="captain_Encourage"></div></div><br />
-                       <div>Taunt: <div id="captain_Taunt"></div></div><br />
-                       <div>Orders: <div id="captain_Orders"></div></div><br />
-                       <div>Moving Speech: <div id="captain_MovingSpeech"></div></div><br />
+                       <div class="row"> 
+                           <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="captain_Demand"></div>
+                              <pre class="text-white text-center"><small>Demand</small></pre>
+                           </div>
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="captain_Encourage"></div>
+                              <pre class="text-white text-center"><small>Encourage</small></pre>
+                           </div>
+                       </div>
+                       <div class="row"> 
+                           <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="captain_Taunt"></div>
+                              <pre class="text-white text-center"><small>Taunt</small></pre>
+                           </div>
+                           <div class="col-2 border border-success bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="captain_Orders"></div>
+                              <pre class="text-white text-center"><small>Orders</small></pre>
+                           </div>
+                       </div>
+                       <div class="row"> 
+                           <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                              <div class="display-4 text-center" id="captain_MovingSpeech"></div>
+                              <pre class="text-white text-center"><small>Moving Speech</small></pre>
+                           </div>
+                       </div>
                    </div>
                 </div>
               </div>
               <div id="helm" class="tab-pane fade">
                 <h3>Helm</h3>
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-sm offset-sm-1">
                         <h4>Pilot Actions</h4>
                     </div>
                     <div class="col-sm">
@@ -96,20 +132,65 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm">
-                        <div>Back Off Stunt: <div id="pilot_BackOffStunt"></div></div><br />
-                        <div>Barrel Roll Stunt: <div id="pilot_BarrelRollStunt"></div></div><br />
-                        <div>Evade Stunt: <div id="pilot_EvadeStunt"></div></div><br />
-                        <div>Flip And Burn Stunt: <div id="pilot_FlipAndBurnStunt"></div></div><br />
-                        <div>Fly By Stunt: <div id="pilot_FlyByStunt"></div></div><br />
-                        <div>Slide Stunt: <div id="pilot_SlideStunt"></div></div><br />
+                    <div class="col-sm offset-sm-1">
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_BackOffStunt"></div>
+                                <pre class="text-white text-center"><small>Back Off<br />Stunt</small></pre>
+                            </div>
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_BarrelRollStunt"></div>
+                                <pre class="text-white text-center"><small>Barrel Roll<br />Stunt</small></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_EvadeStunt"></div>
+                                <pre class="text-white text-center"><small>Evade Stunt</small></pre>
+                            </div>
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_FlipAndBurnStunt"></div>
+                                <pre class="text-white text-center"><small>Flip & Burn<br />Stunt</small></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_FlyByStunt"></div>
+                                <pre class="text-white text-center"><small>Fly-By Stunt</small></pre>
+                            </div>
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="pilot_SlideStunt"></div>
+                                <pre class="text-white text-center"><small>Slide Stunt</small></pre>
+                            </div>
+                        </div>
                    </div>
                     <div class="col-sm">
-                        <div>Balance: <div id="science_Balance"></div></div><br />
-                        <div>Scan: <div id="science_Scan"></div></div><br />
-                        <div>Target System: <div id="science_TargetSystem"></div></div><br />
-                        <div>Lock On: <div id="science_LockOn"></div></div><br />
-                        <div>Improve Countermeasures: <div id="science_ImproveCountermeasures"></div></div><br />
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="science_Balance"></div>
+                                <pre class="text-white text-center"><small>Balance<br />Shields</small></pre>
+                            </div>
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="science_Scan"></div>
+                                <pre class="text-white text-center"><small>Scan</small></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="science_TargetSystem"></div>
+                                <pre class="text-white text-center"><small>Target<br />System</small></pre>
+                            </div>
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="science_LockOn"></div>
+                                <pre class="text-white text-center"><small>Lock On</small></pre>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 border border-primary bg-dark rounded text-white" style="min-width: 120px">
+                                <div class="display-4 text-center" id="science_ImproveCountermeasures"></div>
+                                <pre class="text-white text-center"><small>Improve<br />Counter-<br />measures</small></pre>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm">
                         <p>Captain Actions</p>
@@ -125,9 +206,9 @@
         </div>
 
         <script language="javascript">
-            var ship_tier = 20;
-            var enemy_tier = 10;
-            var enemy_countermeasure_bonus = 5;
+            var ship_tier = 4;
+            var enemy_tier = 1;
+            var enemy_countermeasure_bonus = 3;
 
             document.getElementById("ship_tier").innerHTML = ship_tier;
             document.getElementById("enemy_tier").innerHTML = enemy_tier;
